@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     public float Speed = 1;
 
-    void Update () {
+    void FixedUpdate() {
         transform.Translate(
             Input.GetAxis("Horizontal") * Speed,
             0,
